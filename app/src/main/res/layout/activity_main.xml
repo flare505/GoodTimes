@@ -1,0 +1,218 @@
+<com.mxn.soul.flowingdrawer_core.LeftDrawerLayout
+    android:id="@+id/id_drawerlayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    >
+    <!--content-->
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvFeed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/view_feed_toolbar" />
+        </android.support.design.widget.AppBarLayout>
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+          <android.support.design.widget.FloatingActionButton
+              android:id=  "@+id/fab"
+
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:clickable="true"
+              app:rippleColor="@color/style_color_primary_dark"
+              android:src = "@drawable/pen"
+              app:backgroundTint="@color/style_color_accent"
+              android:layout_alignParentBottom="true"
+              android:layout_alignParentRight="true"
+              android:layout_alignParentEnd="true"
+              android:layout_marginRight="20dp"
+              android:layout_marginBottom="20dp"/>
+          <io.codetail.widget.RevealFrameLayout
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+              <LinearLayout
+                  android:layout_width="300dp"
+                  android:layout_height="420dp"
+                  android:orientation="vertical"
+                  android:layout_gravity="center"
+                  android:gravity="center_horizontal"
+                  android:background="@drawable/card_bg"
+                  android:padding="15dp"
+                  android:id = "@+id/circularlayout"
+                  >
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="WRITE A FEED"
+                      android:textSize="20dp"
+                      android:paddingBottom="7dp"
+                      android:textColor="#ffffff"/>
+                  <EditText
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:hint="Title of the feed"
+                      android:gravity="center"
+                      android:padding="10dp"
+                      android:background="@drawable/textview"/>
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:gravity="center">
+                      <LinearLayout
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:id="@+id/datepicker">
+                          <ImageView
+                              android:layout_width="40dp"
+                              android:layout_height="40dp"
+                              android:src="@drawable/calender"/>
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="+ Date"/>
+                      </LinearLayout>
+
+                      <View
+                          android:layout_width="1dp"
+                          android:layout_height="50dp"
+                          android:layout_margin="15dp"
+                          android:background="@color/style_color_primary_dark"/>
+                      <LinearLayout
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:id="@+id/timepicker">
+                          <ImageView
+                              android:layout_width="40dp"
+                              android:layout_height="40dp"
+                              android:src="@drawable/time"/>
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="+ Time"/>
+                      </LinearLayout>
+
+                      <View
+                          android:layout_width="1dp"
+                          android:layout_height="50dp"
+                          android:layout_margin="15dp"
+                          android:background="@color/style_color_primary_dark"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/location"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="+ Venue"/>
+                        </LinearLayout>
+
+                  </LinearLayout>
+
+                  <EditText
+                      android:layout_marginTop="5dp"
+                      android:layout_width="match_parent"
+                      android:layout_height="80dp"
+                      android:hint="Content of the feed"
+                      android:gravity="center"
+                      android:padding="10dp"
+                      android:background="@drawable/textview"/>
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:gravity="center"
+                      android:layout_marginTop="5dp">
+
+                      <ImageView
+                          android:layout_width="80dp"
+                          android:layout_height="80dp"
+                          android:src="@drawable/camera"/>
+                      <View
+                          android:layout_width="1dp"
+                          android:layout_height="50dp"
+                          android:layout_marginRight="25dp"
+                          android:layout_marginLeft="25dp"
+                          android:layout_marginTop="5dp"
+                          android:background="@color/style_color_primary_dark"/>
+
+
+                      <ImageView
+                          android:layout_width="80dp"
+                          android:layout_height="80dp"
+                          android:src="@drawable/image">
+
+                      </ImageView>
+                  </LinearLayout>
+                  <Button
+                      android:layout_width="120dp"
+                      android:layout_height="50dp"
+                      android:layout_marginTop="10dp"
+                      android:text = "POST"
+                      android:gravity = "center"
+                      android:background="@drawable/mybutton"
+                      android:textColor="#000"
+
+                      android:id="@+id/register" />
+              </LinearLayout>
+          </io.codetail.widget.RevealFrameLayout>
+      </RelativeLayout>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <!--menu-->
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:clipChildren="false"
+        >
+
+        <com.mxn.soul.flowingdrawer_core.FlowingView
+            android:id="@+id/sv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <FrameLayout
+            android:id="@+id/id_container_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="25dp"
+            android:paddingRight="10dp"
+            />
+
+
+    </RelativeLayout>
+
+</com.mxn.soul.flowingdrawer_core.LeftDrawerLayout>

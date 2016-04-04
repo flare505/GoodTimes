@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--colors.xml-->
+<resources>
+    <color name="style_color_primary">#006956</color>
+    <color name="style_color_primary_dark">#004d40</color>
+    <color name="style_color_accent">#fbc02d</color>
+    <color name="fab_color_pressed">#b9f6ca</color>
+    <color name="fab_color_shadow">#44000000</color>
+    <color name="text_like_counter">#006956</color>
+    <color name="paint_color">#b9f6ca</color>
+
+</resources>

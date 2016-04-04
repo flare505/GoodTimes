@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\Satyam Poddar\\AndroidStudioProjects\\GoodTimes\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi-v4\\icon.png",
+        "source": "C:\\Users\\Satyam Poddar\\AndroidStudioProjects\\GoodTimes\\app\\src\\main\\res\\mipmap-mdpi\\icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Satyam Poddar\\AndroidStudioProjects\\GoodTimes\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\Satyam Poddar\\AndroidStudioProjects\\GoodTimes\\app\\build\\intermediates\\exploded-aar\\com.github.florent37\\materialtextfield\\1.0.1\\res\\mipmap-mdpi\\ic_launcher.png"
+    }
+]
